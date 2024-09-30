@@ -1,0 +1,49 @@
+/* Full viewport height for the body */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    position: relative;
+}
+
+/* Star shape */
+.star {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    animation: bounce 12s infinite linear, rotate 8s infinite linear;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+    0% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 50px); /* Move to top right, accounting for star width */
+        transform: translate(0, 0) rotate(90deg);
+    }
+    50% {
+        top: calc(100% - 50px); /* Move to bottom right */
+        left: calc(100% - 50px);
+        transform: translate(0, 0) rotate(180deg);
+    }
+    75% {
+        top: calc(100% - 50px); /* Move to bottom left */
+        left: 0;
+        transform: translate(0, 0) rotate(270deg);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
