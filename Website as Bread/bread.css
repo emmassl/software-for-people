@@ -1,0 +1,76 @@
+/* Centering the entire body content */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+p
+{
+    color: #f7f7f7;
+    max-width: 38%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 5px rgba(142, 28, 255, 0.8);
+}
+
+/* Style for the centered image */
+.centered-image {
+    max-width: 200px; /* Adjust the size of the image */
+    height: auto;
+}
+
+/* Style for the centered link */
+.centered-link {
+    margin-top: 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: text-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for the link */
+.centered-link:hover {
+    text-decoration-color: #333;
+    color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets, landscape phones */
+@media (max-width: 768px) {
+    p {
+        max-width: 60%; /* Increase text width for smaller screens */
+    }
+
+    .centered-link {
+        font-size: 22px; /* Decrease font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+
+    .centered-image {
+        max-width: 150px; /* Smaller image on medium screens */
+    }
+}
+
+/* Portrait phones */
+@media (max-width: 480px) {
+    p {
+        max-width: 80%; /* Further increase text width for small screens */
+    }
+
+    .centered-link {
+        font-size: 18px; /* Reduce font size more for small screens */
+        padding: 6px 12px; /* Adjust padding */
+    }
+
+    .centered-image {
+        max-width: 100px; /* Smaller image for small screens */
+    }
+}
