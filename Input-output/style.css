@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+#image {
+    width: 250px; /* Starting width of the image */
+}
+
+#text {
+    width: 100%;
+    position: fixed;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+#slider {
+    width: 100%;
+}
