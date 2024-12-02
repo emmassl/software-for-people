@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f3b3da; /* Dark blue border color */
+    font-family: 'Instrument Serif';
+    color: #3f57d3 /* font color */
+}
+
+.bg-pink {
+    background-color: #f3b3da; /* Light pink */
+}
+
+.bg-yellow {
+    background-color: #fffda7; /* Light yellow */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    font-family: 'Instrument Sans';
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: #3f57d3; /* Default color */
+    transition: transform 0.2s ease, color 0.2s ease; /* Smooth transition */
+}
+
+/* do hover effect */
+
+.circle {
+    background-color: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px; /* Push the footer to the bottom automatically */
+    font-family: 'Instrument Sans';
+
+}  
+
+p {
+    font-size: 16px;
+}
+
+.pink-footer p {
+    color: #FFBADD;
+  }
+
+.yellow-footer p {
+color: #fffda7;
+}
+
+/* h1 is used for large names */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* h2 is used for general large blue txt */
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 15px;
+    transition: opacity 1s ease-in-out; /* Smooth fade effect */
+}
+
+.contact-list {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    color: #000000;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.contact-list p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    gap: 15px;
+    font-family: 'Instrument Sans';
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Instrument Sans';
+    gap: 70px;
+}
+
+#prompt {
+    font-size: 1rem;
+    color: #3f57d3;
+    margin: 20px auto; /* Center the prompt vertically and horizontally */
+    font-family: 'Instrument Sans';
+    word-wrap: break-word; /* Ensure long text wraps to the next line */
+    overflow-wrap: break-word; /* Compatibility for word breaking */
+    max-width: 100%; /* Ensure the prompt stays within the container width */
+}
+
+.call-btn,
+.text-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.1em;
+    font-family: 'Instrument Sans';
+    cursor: pointer;
+}
+
+.call-btn {
+    background-color: #5c75e6;
+    color: #000000;
+}
+
+.text-btn {
+    background-color: #000000;
+    color: #ffffff;
+}
