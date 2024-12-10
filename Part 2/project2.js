@@ -81,12 +81,42 @@ function getRandomDailyContent() {
   };
 }
 
-// Initialize the page
+// Initialize the page 
 document.addEventListener("DOMContentLoaded", () => {
   displayDate();
   getRandomDailyContent();
 });
 
+//gcal prompt
+// document.getElementById('addReminderLink').addEventListener('click', function (event) {
+//   event.preventDefault(); // Prevent the default anchor link behavior
+
+//   // Event details
+//   const title = encodeURIComponent('Daily AERIN Reminder');
+//   const description = encodeURIComponent('Call a friend today!');
+
+//   // Get today's date in YYYYMMDD format
+//   const today = new Date();
+//   const year = today.getUTCFullYear();
+//   const month = String(today.getUTCMonth() + 1).padStart(2, '0');
+//   const day = String(today.getUTCDate()).padStart(2, '0');
+
+//   const startDate = `${year}${month}${day}`;
+
+//   // Define start and end times in HHMMSS format (9:00 AM to 9:30 AM UTC)
+//   const startTime = '090000Z';
+//   const endTime = '093000Z';
+
+//   // Full date-time strings for Google Calendar link
+//   const startDateTime = `${startDate}T${startTime}`;
+//   const endDateTime = `${startDate}T${endTime}`;
+
+//   // Google Calendar event link with daily recurrence
+//   const googleCalendarLink = `https://www.google.com/calendar/render?action=TEMPLATE&text=${title}&details=${description}&dates=${startDateTime}/${endDateTime}&recur=RRULE:FREQ=DAILY`;
+
+//   // Open the link in a new tab
+//   window.open(googleCalendarLink, '_blank');
+// });
 
 
 
