@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div>This website posts and displays data from this <a href="https://docs.google.com/spreadsheets/d/1JFfZTroBnun15PG3ziz4EKmVgT8HdbuW5nheD7_TZMo/edit?usp=sharing">Google Sheet</a>.</div>
+
+  <div><a href="index.html">View data here</a></div>
+
+  <h1>Please answer the questions below!</h1>
+  <img src="bk.jpg" alt="AI ice cream cat" width="500" height="300">
+  <!-- change the form action to your script url -->
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbzqadQ28ELRAIzEMpjYymkg-89MffR2W1CYpFYRBB1OAPQr0Qmwf7sswF0paGsMLATnow/exec">
+    
+    <div class="form-elements">
+      <fieldset>
+        <label for="name">Name: </label>
+        <textarea id="name" name="name" rows="10"
+        placeholder="Your name"></textarea>
+      </fieldset>
+      <!-- <fieldset>
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Type your favorite color to submit it to the communal rainbow!"></textarea>
+      </fieldset> -->
+      <!-- <fieldset>
+        <label for="word">Message: </label>
+        <textarea id="word" name="word" rows="10"
+        placeholder="What's the first word that comes to your mind! Quick. "></textarea>
+      </fieldset> -->
+
+      <fieldset>
+        <label for="crave">Message: </label>
+        <textarea id="crave" name="crave" rows="10"
+        placeholder="What sweet treat are you craving right now"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <label for="dessert">Message: </label>
+        <textarea id="dessert" name="dessert" rows="10"
+        placeholder="If you could only have one dessert for the rest of your life, what would it be..."></textarea>
+      </fieldset>
+
+      <fieldset>
+        <label for="hate">Message: </label>
+        <textarea id="hate" name="hate" rows="10"
+        placeholder="What dessert do you ABHOR!"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <label for="secret">Message: </label>
+        <textarea id="secret" name="secret" rows="10"
+        placeholder="Now tell me a deep dark secret!"></textarea>
+      </fieldset>
+
+      <fieldset class="honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        Submit form
+      </button>
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2>Thanks for your submission! Each year my suitemates and I get each other a dessert on our birthdays. Using this form, I have tricked you into telling me your birthday treat suprise!</h2>
+      <div><a href="index.html">See other responses from friends!</a></div>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" src="submit-data.js"></script>
+
+</body>
+</html>

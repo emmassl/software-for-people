@@ -1,0 +1,62 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:rgb(250, 237, 222);
+  color: #FF6347;
+}
+
+fieldset {
+  margin: 0px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: none;
+}
+
+h1 {
+  font-size: 2.5em;                      
+  background: linear-gradient(90deg,    
+    #ff0000,  
+    #ff7f00,   
+    #ffff00,  
+    #00ff00,  
+    #0000ff,   
+    #4b0082,  
+    #9400d3   
+  );
+  background-size: 200% 100%;           
+  background-clip: text;                 /* Clip the background to the text */
+  color: transparent;                    /* Make the text color transparent to show the gradient */
+}
+
+textarea {
+  height: 2rem;           /* Set a shorter height */
+  width: 70%;              /* Limit width to 80% of the container */
+  max-width: 400px;        
+  padding: 10px;          
+  font-size: 14px;         
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.honeypot-field {
+  display: none;
+}
+
+li {
+  margin-bottom: 1em;
+}
+
+.Timestaoop0pppoomp {
+  display: none;
+}
+
+button {
+  border: none;
+  background-color:aquamarine;
+  margin: 10px; 
+  width: 120px; 
+  height: 40px;
+}
