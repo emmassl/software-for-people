@@ -1,0 +1,34 @@
+body {
+    font-family: 'Jacquarda Bastarda 9', serif;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1px
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.text-container {
+    width: 90vw; /* This ensures the words stay within 90% of the viewport width */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+width: 80%;
+height: 80%;
+align-self: center;
+display: flex;
+}

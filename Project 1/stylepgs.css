@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    background: radial-gradient(circle, yellow, green);
+    animation: gradientTransition 15s ease infinite;
+    background-size: 400% 400%;
+    font-family: 'Jacquarda Bastarda 9', serif;
+  }
+
+  @media only screen and ( max-width: 700px ) {
+    .caja {
+      width: 100%;
+    } 
+  }
+
+  @keyframes gradientTransition {
+    0% {
+      background: radial-gradient(circle, rgb(241, 241, 112), rgb(191, 216, 163));
+    }
+    30% {
+      background: radial-gradient(circle, #f9e79f, #a2d9ce); /* Light yellow to soft green */
+    }
+    40% {
+      background: radial-gradient(circle, #d4efdf, #d7bde2); /* Soft green to light purple */
+    }
+    80% {
+      background: radial-gradient(circle, #c39bd3, #f5b7b1); /* Light purple to pink */
+    }
+    85% {
+      background: radial-gradient(circle, #f8c471, #f1948a); /* Soft pinks */
+    }
+    100% {
+      background: radial-gradient(circle, yellow, rgb(156, 252, 156)); /* Back to yellow and green */
+    }
+  }
+  
