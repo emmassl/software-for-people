@@ -1,0 +1,134 @@
+/* Things to fix: 
+when resizing the screen, words go off the top */
+
+body {
+font-family: 'Jacquarda Bastarda 9', serif;
+height: 90vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0;
+padding: 1px
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.background-image {
+    background-image: url('star.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    height: 100vh; /* Fills the entire height of the viewport */
+    width: 100vw; /* Fills the entire width of the viewport */
+    opacity: 0.5; /* Adjust the opacity as needed */
+    position: absolute; /* Ensures it remains at the top of the page */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Moves the background behind all other content */
+  }
+
+.text-container {
+width: 90vw; /* This ensures the words stay within 90% of the viewport width */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between; /* Ensures words spread evenly across the screen */
+align-items: center;
+}
+
+.word, .page {
+font-size: 3rem;
+font-weight: bold;
+text-align: justify;
+margin: 5px 0;
+padding: 0 1%;
+flex-grow: 1;
+}
+
+.emma {
+font-size: 3rem; /* Fixed font size */
+color: #ff5fca;
+font-weight: bold;
+text-align: justify;
+margin: 5px 0;
+padding: 0 1%;
+flex-grow: 1;
+}
+
+.page a {
+text-decoration: none;
+text-decoration-color: aqua;
+color: inherit;
+}
+
+.page:hover {
+transform: scale(1.07);
+transition: color 0.3s ease, transform 0.3s ease-in-out;
+color: rgb(41, 230, 230)
+}
+
+/* Star Animation */
+.star {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(253, 253, 53);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    animation: bounce 12s infinite linear, rotate 8s infinite linear;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+    0% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 50px); /* Move to top right, accounting for star width */
+        transform: translate(0, 0) rotate(90deg);
+    }
+    50% {
+        top: calc(100% - 50px); /* Move to bottom right */
+        left: calc(100% - 50px);
+        transform: translate(0, 0) rotate(180deg);
+    }
+    75% {
+        top: calc(100% - 50px); /* Move to bottom left */
+        left: 0;
+        transform: translate(0, 0) rotate(270deg);
+    }
+    100% {
+        top: 0;
+        left: 0;
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+.word, .emma, .page {
+    font-size: 2.5rem;
+}
+}
+
+@media (max-width: 768px) {
+.word, .emma, .page {
+    font-size: 2rem;
+}
+}
+
+@media (max-width: 480px) {
+.word, .emma, .page {
+    font-size: 1.5rem;
+}
+}
